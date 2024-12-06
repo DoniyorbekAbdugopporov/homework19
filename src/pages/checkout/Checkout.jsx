@@ -61,7 +61,7 @@ const Checkout = () => {
   return (
     <div className="container mx-auto py-10 px-4 md:px-10 pt-24">
       <h1 className="text-3xl font-bold mb-2 text-center">
-        Buyurtmani Yakunlash
+        Buyurtmani Rasmiylashtirish
       </h1>
       <form
         onSubmit={handleSubmit}

@@ -6,7 +6,7 @@ const Empty = ({ title, img }) => {
 
   return (
     <div className="text-center flex flex-col gap-6">
-      <img className="w-1/2 h-1/2 mx-auto" src={img} alt="likes image" />
+      <img className="w-1/2 h-1/2 mx-auto" src={img} alt="image" />
       <p className="text-3xl text-[#56B280] font-bold">{title}</p>
       <button
         onClick={() => navigate("/")}
