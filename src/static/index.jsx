@@ -37,4 +37,12 @@ export const LINKS = [
     path: "/wishlist",
     icon: null,
   },
+  {
+    id: 7,
+    name: "Cart",
+    path: "/cart",
+    icon: null,
+  },
 ];
+
+export const PROMOCODES = ["SALOM", "LAYLO"];

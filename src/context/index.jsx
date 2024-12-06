@@ -4,17 +4,18 @@ const Context = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [count, setCount] = useState(1);
-  const [auth, setAuth] = useState(null);
   const [wishList, setWishList] = useState(
     JSON.parse(localStorage.getItem("wishlist")) || []
   );
+  const [cart, setCart] = useState([]);
+
 
   useEffect(() => {
     localStorage.setItem("wishlist", JSON.stringify(wishList));
   }, [wishList]);
 
   return (
-    <Context.Provider value={{ count, setCount, wishList, setWishList }}>
+    <Context.Provider value={{ count, setCount, wishList, setWishList, cart, setCart }}>
       {children}
     </Context.Provider>
   );

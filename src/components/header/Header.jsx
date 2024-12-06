@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container">
         <nav className="navbar flex items-center justify-between">
           <div className="navbar__logo">
-            <img src={NavLogo} alt="logo" />
+            <img className="min-w-40" src={NavLogo} alt="logo" />
           </div>
           <div className="navbar__collection flex items-center justify-center gap-6">
             {LINKS?.map((link) => (

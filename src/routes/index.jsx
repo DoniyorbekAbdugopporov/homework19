@@ -7,6 +7,8 @@ import Layout from "../pages/layout/Layout";
 import Login from "../pages/login/Login";
 import Home from "../pages/home/Home";
 import WishList from "../pages/wishlist/Wishlist";
+import Cart from "../pages/cart/Cart";
+import Checkout from "../pages/checkout/Checkout";
 
 const Router = () => {
   return (
@@ -17,6 +19,8 @@ const Router = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/wishlist" element={<WishList />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Route>
       <Route path="/login" element={<Login />} />
     </Routes>
